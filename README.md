@@ -5,14 +5,14 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads storybook for development
 ```
-npm run serve
+npm run storybook
 ```
 
-### Compiles and minifies for production
+### Compiles and minifies lib for production
 ```
-npm run build
+npm run build-lib
 ```
 
 ### Customize configuration

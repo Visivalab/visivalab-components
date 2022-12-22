@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* .color-scheme--hera, .color-scheme--omnia {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+} */
+.color-scheme--hera {
+    --font-family: 'Jost', sans-serif;
+    background-color: #fafafa;
+    --theme--primary-color: white;
+    --theme--secondary-color: black;
+    --theme--hover-color: #e0e0e0;
+    --button--border: 1px solid black;
+    --button--text-color: black;
+
+}
+
+.color-scheme--omnia {
+    --font-family: 'Poppins', sans-serif;
+    --font-familt-alt: 'Roboto', sans-serif;
+    background-color: black;
+    --theme--primary-color: black;
+    --theme--secondary-color: white;
+    --theme--hover-color: #1f1f1f;
+    --button--border: 1px solid white;
+    --button--text-color: white;
+}

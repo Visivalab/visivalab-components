@@ -2,16 +2,39 @@
   "name": "visivalab-components",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/visivalab-components.common.js",
+  "module": "dist/visivalab-components.umd.min.js",
+  "author": "Visivalab Team",
+  "description": "## Porject setup ```npm install```",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build-lib": "vue-cli-service build --target lib --name visivalab-components src/index.js"
   },
   "dependencies": {
+    "@storybook/addons": "^6.5.14",
+    "@storybook/theming": "^6.5.14",
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-webpack5": "^6.5.14",
+    "@storybook/manager-webpack5": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/vue3": "^6.5.14",
     "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "babel-loader": "^8.3.0",
+    "storybook-dark-mode": "^2.0.4",
+    "vue-loader": "^16.8.3"
   }
 }
