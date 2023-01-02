@@ -23,4 +23,7 @@ import Input from "./stories/inputs/Input.vue"
 // VISUALIZATIONS
 import AvatarOmnia from "./stories/visualizations/AvatarOmnia.vue"
 
+import "./stories/assets/color-scheme.css"
+
+
 export { Button, IconButton, PlainButton, RoundButton, Input, AvatarOmnia };
