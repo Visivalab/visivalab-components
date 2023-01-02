@@ -66,11 +66,16 @@ export default {
   gap: 10px;
   text-transform: uppercase;
   border: var(--button--border);
-  padding: 25px 18px;
+  padding: 20px 18px;
+  width: 215px;
+  user-select: none;
 }
 
 .icon-button span {
   width: 120px;
+  font-size: 13px;
+  letter-spacing: 0.11em;
+  line-height: 14px;
 }
 
 .icon-button--primary {

@@ -60,8 +60,11 @@ export default {
   text-transform: uppercase;
   border: var(--button--border);
 }
-.button:hover {
+.button--primar:hover {
   background-color: var(--theme--hover-color);
+}
+.button--secondary:hover {
+  background-color: var(--theme--hover2-color);
 }
 .button--primary {
   color: var(--theme--secondary-color);

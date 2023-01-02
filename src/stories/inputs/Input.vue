@@ -76,7 +76,12 @@ export default {
         "icon-bg": props.iconBackground,
       })),
       onClick(text) {
-        emit("click", text);
+        if  (props.mode == 'password') {
+          if (type.value == 'password') type.value = 'text';
+          else type.value = 'password'
+        } else {
+          emit("click", text.trim());
+        }
       },
     };
   },

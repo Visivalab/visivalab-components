@@ -5,6 +5,7 @@ export default {
   component: Button,
   parameters: {
     layout: 'fullscreen',
+    backgrounds: { default: 'light'}
   },
   argTypes: {
     backgroundColor: { control: "color" },

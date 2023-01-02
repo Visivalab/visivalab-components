@@ -9,7 +9,7 @@
 } */
 .color-scheme--hera {
     --font-family: 'Jost', sans-serif;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     --theme--primary-color: white;
     --theme--secondary-color: black;
     --theme--hover-color: #e0e0e0;
@@ -21,10 +21,11 @@
 .color-scheme--omnia {
     --font-family: 'Poppins', sans-serif;
     --font-familt-alt: 'Roboto', sans-serif;
-    background-color: black;
+    /* background-color: black; */
     --theme--primary-color: black;
     --theme--secondary-color: white;
     --theme--hover-color: #1f1f1f;
+    --theme--hover2-color: #dddddd;
     --button--border: 1px solid white;
     --button--text-color: white;
 }

@@ -8,7 +8,14 @@ export const parameters = {
       date: /Date$/,
     },
   },
-  backgrounds: { disable: true },
+  // backgrounds: { disable: true },
+  backgrounds: {
+    default: 'dark',
+      values: [
+        { name: 'dark', value: '#000000' },
+        { name: 'light', value: '#ffffff' },
+      ],
+  },
   darkMode: {
     dark: {...themes.dark, brandImage: require("./assets/visivalab-light.png")},
     light: {...themes.normal, brandImage: require("./assets/visivalab-dark.png")}

@@ -64,6 +64,7 @@ export default {
   flex-direction: column;
   color: var(--theme--secondary-color);
   text-transform: capitalize;
+  white-space: nowrap;
 }
 
 .avatar-text h4,
