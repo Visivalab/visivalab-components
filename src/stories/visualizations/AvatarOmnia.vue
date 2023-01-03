@@ -52,8 +52,8 @@ export default {
   align-items: center;
 }
 .avatar img {
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: var(--button--border);
   object-fit: cover;

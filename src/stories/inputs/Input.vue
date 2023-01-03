@@ -53,7 +53,7 @@ export default {
       type: String,
     }
   },
-  emits: ["click", "update:modelValue"],
+  emits: ["iconClick", "update:modelValue"],
   setup(props, { emit }) {
     const type = ref(null);
     if (props.mode == "search") {
@@ -72,12 +72,12 @@ export default {
       iconClass: computed(() => ({
         "icon-bg": props.iconBackground,
       })),
-      onClick(text) {
+      onClick() {
         if (props.mode == 'password') {
           if (type.value == 'password') type.value = 'text';
           else type.value = 'password'
         } else {
-          emit("input", text.trim());
+          emit("iconClick");
         }
       },
     };
@@ -90,6 +90,7 @@ export default {
   display: flex;
   border: var(--button--border);
   min-width: 320px;
+  box-sizing: content-box;
 }
 
 .input-with-icon {
@@ -114,5 +115,6 @@ export default {
 
 .input img {
   object-fit: contain;
+  box-sizing: content-box;
 }
 </style>

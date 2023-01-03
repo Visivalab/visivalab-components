@@ -66,6 +66,7 @@ export default {
     border-radius: 30px;
     text-transform: uppercase;
     user-select: none;
+    box-sizing: content-box;
 }
 
 .round-button img {
