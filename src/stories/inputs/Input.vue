@@ -1,19 +1,14 @@
 <template>
   <div class="input" :style="{ width: width, height: height + 'px' }">
-    <input :type="type" :class="classes" v-model="text" :placeholder="placeholder" :maxlength="maxlen" :required="required" />
+    <input :type="type" @input="$emit('update:modelValue', $event.target.value)" :class="classes" :placeholder="placeholder" :maxlength="maxlen"
+      :required="required" />
     <!-- [ ]: los iconos están guarados en la base de datos? -->
-    <img
-      v-if="icon"
-      :src="icon"
-      @click="onClick(text)"
-      :style="{
-        background: iconBackground,
-        width: iconSize + 'px',
-        height: iconSize + 'px',
-        padding: ((height - iconSize) / 2)+'px',
-      }"
-      :class="iconClass"
-    />
+    <img v-if="icon" :src="icon" @click="onClick(text)" :style="{
+  background: iconBackground,
+  width: iconSize + 'px',
+  height: iconSize + 'px',
+  padding: ((height - iconSize) / 2) + 'px',
+}" :class="iconClass" />
   </div>
 </template>
 
@@ -54,10 +49,12 @@ export default {
       type: Number,
       default: 72,
     },
+    modelValue: {
+      type: String,
+    }
   },
-  emits: ["click"],
+  emits: ["click", "update:modelValue"],
   setup(props, { emit }) {
-    const text = ref(null);
     const type = ref(null);
     if (props.mode == "search") {
       type.value = "text";
@@ -66,7 +63,7 @@ export default {
     }
 
     return {
-      type, text,
+      type,
       classes: computed(() => ({
         "input-with-icon": props.icon,
         "input-no-icon": !props.icon,
@@ -76,11 +73,11 @@ export default {
         "icon-bg": props.iconBackground,
       })),
       onClick(text) {
-        if  (props.mode == 'password') {
+        if (props.mode == 'password') {
           if (type.value == 'password') type.value = 'text';
           else type.value = 'password'
         } else {
-          emit("click", text.trim());
+          emit("input", text.trim());
         }
       },
     };
