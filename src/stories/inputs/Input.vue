@@ -7,7 +7,7 @@
   background: iconBackground,
   width: iconSize + 'px',
   height: iconSize + 'px',
-  padding: ((height - iconSize) / 2) + 'px',
+  padding: ((height - iconSize - 2) / 2) + 'px',
 }" :class="iconClass" />
   </div>
 </template>
@@ -90,7 +90,6 @@ export default {
   display: flex;
   border: var(--button--border);
   min-width: 320px;
-  box-sizing: content-box;
 }
 
 .input-with-icon {
