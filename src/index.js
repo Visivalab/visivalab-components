@@ -26,4 +26,4 @@ import AvatarOmnia from "./stories/visualizations/AvatarOmnia.vue"
 import "./stories/assets/color-scheme.css"
 
 
-export { Button, IconButton, PlainButton, RoundButton, Input, AvatarOmnia };
+export default { Button, IconButton, PlainButton, RoundButton, Input, AvatarOmnia };
