@@ -1,17 +1,3 @@
-// import * as components from "./stories";
-// import "@/stories/assets/color-scheme.css"
-
-// const componentsList = components?.default;
-// const VisivalabComponents = {
-//   install(Vue) {
-//     Object.keys(componentsList).forEach((name) => {
-//       Vue.component(name, componentsList[name]);
-//     });
-//   },
-// };
-
-// export default VisivalabComponents;
-
 // INPUTS
 import Button from "./stories/inputs/Button.vue";
 import IconButton from "./stories/inputs/IconButton.vue";
@@ -26,4 +12,4 @@ import AvatarOmnia from "./stories/visualizations/AvatarOmnia.vue"
 import "./stories/assets/color-scheme.css"
 
 
-export default { Button, IconButton, PlainButton, RoundButton, Input, AvatarOmnia };
+export { Button, IconButton, PlainButton, RoundButton, Input, AvatarOmnia };
