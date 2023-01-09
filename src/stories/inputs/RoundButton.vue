@@ -1,6 +1,6 @@
 <template>
     <div @click="onClick" :class="classes">
-        <img v-if="icon" :style="{width: iconSize + 'px'}" :src="icon" />
+        <img v-if="icon" :style="{ width: iconSize + 'px' }" :src="icon" />
         <span v-if="label">{{ label }}</span>
     </div>
 </template>
@@ -29,16 +29,19 @@ export default {
             type: String,
         },
     },
-    emits: ["click"],
-    setup(props, { emit }) {
-        props = reactive(props);
-        return {
-            classes: computed(() => ({
+    computed: {
+        classes() {
+            return {
                 "round-button": true,
-                'round-button--primary': props.primary,
-                'round-button--secondary': !props.primary,
-                'round-button--onlyicon': props.icon && !props.label
-            })),
+                'round-button--primary': this.primary,
+                'round-button--secondary': !this.primary,
+                'round-button--onlyicon': this.icon && !this.label
+            }
+        }
+    },
+    emits: ["click"],
+    setup({ emit }) {
+        return {
             onClick() {
                 emit("click");
             },
