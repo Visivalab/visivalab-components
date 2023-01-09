@@ -1,13 +1,11 @@
 <template>
-    <div @click="onClick" :class="classes">
+    <div @click="() => $emit('click')" :class="classes">
         <img v-if="icon" :style="{ width: iconSize + 'px' }" :src="icon" />
         <span v-if="label">{{ label }}</span>
     </div>
 </template>
 
 <script>
-import { reactive } from "@vue/reactivity";
-import { computed } from "@vue/runtime-core";
 
 export default {
     name: "icon-button",
@@ -40,12 +38,7 @@ export default {
         }
     },
     emits: ["click"],
-    setup({ emit }) {
-        return {
-            onClick() {
-                emit("click");
-            },
-        };
+    setup() {
     },
 };
 </script>
