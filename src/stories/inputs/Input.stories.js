@@ -41,13 +41,13 @@ Email.args = {
 export const Password = Template.bind({});
 Password.args = {
   mode: 'password',
-  icon: 'https://img.icons8.com/material-outlined/96/ffffff/visible--v1.png'
+  icon: '/show/404503/body-organ-eye-human-eye-look-view.svg'
 }
 
 export const Search = Template.bind({})
 Search.args = {
   mode: 'search',
-  icon: 'https://img.icons8.com/material-outlined/96/000000/search--v1.png',
+  icon: '/show/476468/search.svg',
   iconBackground: '#ffffff',
-  height: 50,
+  height: 52,
 }

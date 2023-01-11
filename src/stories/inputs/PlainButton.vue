@@ -1,16 +1,20 @@
 <template>
   <div :class="classes" @click="onClick">
-    <img v-if="icon && !swapSide" :style="{width: iconSize + 'px'}" :src="icon" />
+    <Icon v-if="icon && !swapSide" :size="iconSize" :src="icon" />
+    <!-- <img v-if="icon && !swapSide" :style="{width: iconSize + 'px'}" :src="icon" /> -->
     <span v-if="label">{{ label }}</span>
-    <img v-if="icon && swapSide" :style="{width: iconSize + 'px'}" :src="icon" />
+    <!-- <img v-if="icon && swapSide" :style="{width: iconSize + 'px'}" :src="icon" /> -->
+    <Icon v-if="icon && swapSide" :size="iconSize" :src="icon" />
   </div>
 </template>
 
 <script>
 import { reactive } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
+import Icon from '../media/Icon.vue'
 export default {
   name: "icon-button",
+  components: {Icon},
   props: {
     icon: {
       type: String,
@@ -50,7 +54,6 @@ export default {
   display: flex;
   gap: 10px;
   align-items: center;
-  padding: 10px;
   font-family: var(--font-family);
   text-transform: uppercase;
   color: var(--button--text-color);

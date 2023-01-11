@@ -19,7 +19,7 @@ const Template = (args) => ({
 export const Full = Template.bind({});
 Full.args = {
   label: "Ricerca avanzata",
-  icon: "https://img.icons8.com/ios/50/FFFFFF/sorting-options--v1.png",
+  icon: "/show/471876/settings-04.svg",
   iconSize: 30
 };
 
@@ -30,6 +30,6 @@ Text.args = {
 
 export const Icon = Template.bind({});
 Icon.args = {
-  icon: "https://img.icons8.com/sf-regular-filled/48/FFFFFF/bulleted-list.png",
+  icon: "/show/471876/settings-04.svg",
   iconSize: 30
 };

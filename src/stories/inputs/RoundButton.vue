@@ -1,14 +1,16 @@
 <template>
     <div @click="() => $emit('click')" :class="classes">
-        <img v-if="icon" :style="{ width: iconSize + 'px' }" :src="icon" />
+        <Icon v-if="icon" :size="iconSize" :src="icon" />
+        <!-- <img v-if="icon" :style="{ width: iconSize + 'px' }" :src="icon" /> -->
         <span v-if="label">{{ label }}</span>
     </div>
 </template>
 
 <script>
-
+import Icon from '../media/Icon.vue'
 export default {
     name: "icon-button",
+    components: {Icon},
     props: {
         primary: {
             type: Boolean,

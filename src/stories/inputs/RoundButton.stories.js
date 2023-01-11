@@ -22,9 +22,10 @@ const Template = (args) => ({
 
 export const Icon = Template.bind({});
 Icon.args = {
-  iconSize: 20,
+  iconSize: 18,
+  icon: "/show/478925/menu-2.svg"
 }
-Icon.decorators = [() => ({ template: '<story icon="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/FFFFFF/external-menu-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto-2.png" :primary="true" /><story icon="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/000000/external-menu-multimedia-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto-2.png" :primary="false" />' })];
+Icon.decorators = [() => ({ template: '<story :primary="true" /><story :primary="false" />' })];
 
 export const Text = Template.bind({});
 Text.args = {

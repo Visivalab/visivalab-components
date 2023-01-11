@@ -5,7 +5,7 @@
       class="category-code"
       :style="{ 'background-color': categoryColor }"
     ></div>
-    <img v-if="icon" :style="{width: iconSize + 'px'}" :src="icon" />
+    <Icon v-if="icon" :size="iconSize" :src="icon" />
     <span v-if="label">{{ label }}</span>
   </div>
 </template>
@@ -13,6 +13,8 @@
 <script>
 import { reactive } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
+import Icon from '../media/Icon.vue'
+
 export default {
   name: "icon-button",
   props: {
@@ -37,6 +39,7 @@ export default {
       type: String,
     },
   },
+  components: {Icon},
   emits: ["click"],
 
   setup(props, { emit }) {

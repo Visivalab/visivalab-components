@@ -31,8 +31,9 @@ Full.args = {
   categoryColor: "#9C2A31",
   label: "Monumenti",
   iconSize: 30,
+  icon: "/show/211821/monument-temple.svg"
 };
-Full.decorators = [() => ({ template: '<story icon="https://img.icons8.com/ios/50/FFFFFF/ruins.png" :primary="true" /><story icon="https://img.icons8.com/ios/50/000000/ruins.png" :primary="false" />' })];
+Full.decorators = [() => ({ template: '<story :primary="true" /><story :primary="false" />' })];
 
 export const IconText = Template.bind({});
 IconText.args = {

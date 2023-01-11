@@ -1,20 +1,23 @@
 <template>
   <div class="input" :style="{ width: width, height: height + 'px' }">
-    <input :type="type" @input="$emit('update:modelValue', $event.target.value)" :class="classes" :placeholder="placeholder" :maxlength="maxlen"
-      :required="required" />
-    <!-- [ ]: los iconos están guarados en la base de datos? -->
-    <img v-if="icon" :src="icon" @click="onClick(text)" :style="{
-  background: iconBackground,
-  width: iconSize + 'px',
-  height: iconSize + 'px',
-  padding: ((height - iconSize - 2) / 2) + 'px',
-}" :class="iconClass" />
+    <input :type="type" @input="$emit('update:modelValue', $event.target.value)" :class="classes"
+      :placeholder="placeholder" :maxlength="maxlen" :required="required" />
+    <div v-if="icon" @click="onClick(text)" :style="{
+      background: iconBackground,
+      width: iconSize + 'px',
+      height: iconSize + 'px',
+      padding: ((height - iconSize - 2) / 2) + 'px',
+    }" class="icon-bg">
+      <Icon :src="icon" :size="iconSize" />
+    </div>
   </div>
 </template>
 
 <script>
 import { ref } from "@vue/reactivity";
 import { computed } from "@vue/runtime-core";
+import Icon from '../media/Icon.vue'
+
 export default {
   props: {
     mode: {
@@ -47,12 +50,13 @@ export default {
     },
     height: {
       type: Number,
-      default: 72,
+      default: 52,
     },
     modelValue: {
       type: String,
     }
   },
+  components: { Icon },
   emits: ["iconClick", "update:modelValue"],
   setup(props, { emit }) {
     const type = ref(null);
@@ -112,8 +116,10 @@ export default {
   width: 100%;
 }
 
-.input img {
+.input .icon-bg {
   object-fit: contain;
   box-sizing: content-box;
+  cursor: pointer;
 }
+
 </style>
