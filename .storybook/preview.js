@@ -44,11 +44,11 @@ export const decorators = [
   (story, context) => {
     let {scheme} = context.globals
     if (scheme == 'hera') {
-      return {components: story, template: '<div style="padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--hera"><story/></div>'}
+      return {components: story, template: '<div style="background: white; padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--hera"><story/></div>'}
     } else if (scheme == 'omnia') {
-      return {components: story, template: '<div style="padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--omnia"><story/></div>'}
+      return {components: story, template: '<div style="background: black; padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--omnia"><story/></div>'}
     } else {
-      return {components: story, template: '<div style="padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--hera"><story/></div><div style="padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--omnia"><story/></div>'}
+      return {components: story, template: '<div style="background: white; padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--hera"><story/></div><div style="background: black; padding: 80px 0; display:flex; justify-content:center; gap: 25px" class="color-scheme--omnia"><story/></div>'}
     }
   }
 ]
