@@ -16,6 +16,7 @@
     "build-lib": "vue-cli-service build --target lib --name visivalab-components src/index.js"
   },
   "dependencies": {
+    "@iconfu/svg-inject": "^1.2.3",
     "@storybook/addons": "^6.5.14",
     "@storybook/theming": "^6.5.14",
     "core-js": "^3.8.3",
