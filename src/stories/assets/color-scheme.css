@@ -18,8 +18,9 @@
     --theme--primary-color: white;
     --theme--secondary-color: black;
     --theme--hover-color: #e0e0e0;
-    --button--border: 1px solid black;
+    --button--border-color: black;
     --button--text-color: black;
+    --input--border-color: black;
 
 }
 
@@ -31,6 +32,7 @@
     --theme--secondary-color: white;
     --theme--hover-color: #1f1f1f;
     --theme--hover2-color: #dddddd;
-    --button--border: 1px solid white;
+    --button--border-color: white;
     --button--text-color: white;
+    --input--border-color: white;
 }

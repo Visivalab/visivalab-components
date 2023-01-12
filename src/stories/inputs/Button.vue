@@ -58,7 +58,7 @@ export default {
   display: inline-block;
   line-height: 20px;
   text-transform: uppercase;
-  border: var(--button--border);
+  border: 1px solid var(--button--border-color);
 }
 .button--primar:hover {
   background-color: var(--theme--hover-color);

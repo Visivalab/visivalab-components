@@ -60,7 +60,7 @@ export default {
     color: var(--button--text-color);
     padding: 10px 27px;
     gap: 10px;
-    border: var(--button--border);
+    border: 1px solid var(--button--border-color);
     border-radius: 30px;
     text-transform: uppercase;
     user-select: none;

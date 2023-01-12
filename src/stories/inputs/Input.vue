@@ -92,7 +92,7 @@ export default {
 <style>
 .input {
   display: flex;
-  border: var(--button--border);
+  border: 1px solid var(--input--border-color);
   min-width: 320px;
 }
 

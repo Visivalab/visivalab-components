@@ -68,7 +68,7 @@ export default {
   color: var(--button--text-color);
   gap: 10px;
   text-transform: uppercase;
-  border: var(--button--border);
+  border: 1px solid var(--button--border-color);
   padding: 20px 18px;
   width: 215px;
   user-select: none;
