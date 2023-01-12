@@ -1,5 +1,5 @@
 <template>
-  <div v-if="src" :key="src">
+  <div class="icon" v-if="src" :key="src">
     <img :src="src" :style="{width: size + 'px'}" onload="SVGInject(this)">
   </div>
 </template>
