@@ -7,7 +7,6 @@ import Input from "./stories/inputs/Input.vue"
 
 
 // VISUALIZATIONS
-import AvatarOmnia from "./stories/visualizations/AvatarOmnia.vue"
 
 // MEDIA
 import Icon from "./stories/media/Icon.vue"
@@ -15,4 +14,4 @@ import Icon from "./stories/media/Icon.vue"
 import "./stories/assets/color-scheme.css"
 
 
-export { Button, IconButton, PlainButton, RoundButton, Input, AvatarOmnia, Icon };
+export { Button, IconButton, PlainButton, RoundButton, Input, Icon };
