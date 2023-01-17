@@ -81,7 +81,7 @@ export default {
 .button--medium {
   font-size: 13px;
   letter-spacing: 0.22em;
-  padding: 23px 40px;
+  padding: 23px 32px;
 }
 .button--large {
   font-size: 14px;
