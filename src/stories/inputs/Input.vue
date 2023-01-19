@@ -1,6 +1,6 @@
 <template>
   <div class="input" :style="{ width: width, height: height + 'px' }">
-    <input :type="type" @input="$emit('update:modelValue', $event.target.value)" :class="classes"
+    <input :type="type" @input="$emit('update:modelValue', $event.target.value)" :value="modelValue" :class="classes"
       :placeholder="placeholder" :maxlength="maxlen" :required="required" />
     <div v-if="icon" @click="onClick(text)" :style="{
       background: iconBackground,
