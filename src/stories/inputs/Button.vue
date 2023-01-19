@@ -76,12 +76,12 @@ export default {
 }
 .button--small {
   font-size: 12px;
-  padding: 10px 16px;
+  padding: 16px 26px;
 }
 .button--medium {
   font-size: 13px;
   letter-spacing: 0.22em;
-  padding: 23px 32px;
+  padding: 18px 30px;
 }
 .button--large {
   font-size: 14px;

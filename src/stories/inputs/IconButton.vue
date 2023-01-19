@@ -69,7 +69,7 @@ export default {
   gap: 10px;
   text-transform: uppercase;
   border: 1px solid var(--button--border-color);
-  padding: 20px 18px;
+  padding: 15px 17px;
   width: 215px;
   user-select: none;
 }
