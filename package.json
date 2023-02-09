@@ -1,6 +1,6 @@
 {
   "name": "visivalab-components",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "dist/visivalab-components.common.js",
   "module": "dist/visivalab-components.umd.min.js",
   "author": "Visivalab Team",
