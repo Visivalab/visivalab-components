@@ -1,19 +1,19 @@
-import Icon from "./Icon.vue";
+import VIcon from "./VIcon.vue";
 
 export default {
-  title: "Media/Icon",
-  component: Icon,
+  title: "Media/VIcon",
+  component: VIcon,
   parameters: {
     layout: 'fullscreen',
   },
 };
 
 const Template = (args) => ({
-  components: { Icon },
+  components: { VIcon },
   setup() {
     return { args };
   },
-  template: '<Icon v-bind="args" />',
+  template: '<VIcon v-bind="args" />',
 });
 
 export const SVG = Template.bind({});
