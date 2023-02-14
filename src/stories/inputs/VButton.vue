@@ -1,9 +1,9 @@
 <template>
-  <div class="v-button" :class="classes">
+  <button class="v-button" :class="classes">
     <div v-if="color" class="color-code" :style="{ 'background-color': color }"></div>
     <VIcon v-if="icon" :size="iconSize" :src="icon" />
     <span v-if="label" class="label">{{ label }}</span>
-  </div>
+  </button>
 </template>
 
 <script>
@@ -17,6 +17,7 @@ export default {
     iconSize: { type: Number },
     color: { type: String },
     reverse: { type: Boolean, default: false },
+    type: { type: String, default: 'button' }
   },
   // props: ['label', 'icon', 'color', 'iconSize', 'reverse'],
   components: { VIcon },
@@ -46,6 +47,13 @@ export default {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 .v-button.reverse {
