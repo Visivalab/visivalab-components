@@ -1,5 +1,5 @@
 <template>
-  <button class="v-button" :class="classes">
+  <button class="v-button" :class="classes" :type="type">
     <div v-if="color" class="color-code" :style="{ 'background-color': color }"></div>
     <VIcon v-if="icon" :size="iconSize" :src="icon" />
     <span v-if="label" class="label">{{ label }}</span>
